@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Reserva | Restaurante El Planton</title>
+</head>
+<body>
+    <header>
+        <h1>Solicita una reserva</h1>
+    </header>
+
+    <nav>
+        <a href="formularios-restaurante.html">Volver a formularios</a>
+    </nav>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Datos de la reserva</legend>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                </p>
+                <p>
+                    <label for="comensales">Número de comensales:</label>
+                    <input type="number" id="comensales" name="comensales" min="1" max="20" required>
+                </p>
+                <p>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" autocomplete="email" required>
+                </p>
+                <p>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" autocomplete="tel">
+                </p>
+                <p>
+                    <label for="fecha">Día de la reserva:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </p>
+                <p>
+                    <label for="hora">Hora aproximada:</label>
+                    <input type="time" id="hora" name="hora" required>
+                </p>
+                <p>
+                    <label for="indicaciones">Alergias, preferencias o indicaciones:</label><br>
+                    <textarea id="indicaciones" name="indicaciones" rows="5" cols="40"></textarea>
+                </p>
+            </fieldset>
+            <p>
+                <button type="submit">Solicitar reserva</button>
+                <button type="reset">Borrar datos</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <a href="iniciorestaurante.html">Volver al restaurante</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Reseña | Restaurante El Planton</title>
+</head>
+<body>
+    <header>
+        <h1>Cuéntanos qué te ha parecido</h1>
+    </header>
+
+    <nav>
+        <a href="formularios-restaurante.html">Volver a formularios</a>
+    </nav>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Tu reseña</legend>
+                <p>
+                    <label for="plato">¿Qué plato has probado?</label>
+                    <select id="plato" name="plato" required>
+                        <option value="">Selecciona un plato</option>
+                        <option value="tortilla">Tortilla de patatas</option>
+                        <option value="croquetas">Croquetas caseras de jamón</option>
+                        <option value="costillas">Costillas de cerdo al horno</option>
+                        <option value="otro">Otro plato</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="name">
+                </p>
+                <p>
+                    <label for="valoracion">Valoración:</label>
+                    <select id="valoracion" name="valoracion" required>
+                        <option value="">Elige una puntuación</option>
+                        <option value="5">5 - Excelente</option>
+                        <option value="4">4 - Muy bueno</option>
+                        <option value="3">3 - Bueno</option>
+                        <option value="2">2 - Mejorable</option>
+                        <option value="1">1 - No me ha gustado</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="resena">Tu opinión:</label><br>
+                    <textarea id="resena" name="resena" rows="6" cols="45" required></textarea>
+                </p>
+            </fieldset>
+            <p>
+                <button type="submit">Enviar reseña</button>
+                <button type="reset">Borrar datos</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <a href="iniciorestaurante.html">Volver al restaurante</a>
+    </footer>
+</body>
+</html>
