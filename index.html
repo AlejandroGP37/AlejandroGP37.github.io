@@ -8,15 +8,6 @@
     <meta name="keywords" content="restaurante, horario escolar, ciclo formativo">
     <link rel="icon" type="image/png" href="favicon.png">
     <title>Inicio | Restaurante El Planton y horario escolar</title>
-    <style>
-        #horario-escolar {
-            display: none;
-        }
-
-        #horario-escolar:target {
-            display: block;
-        }
-    </style>
 </head>
 <body>
     <header id="inicio">
@@ -24,13 +15,13 @@
     </header>
     <nav>
         <a href="info/iniciorestaurante.html">Entrar al restaurante</a>
-        <a href="#horario-escolar">Ver horario escolar</a>
         <a href="info/hoja-inscripcion.html">Hoja de inscripción</a>
         <a href="info/amigos-informatica.html">Amigos de la informática</a>
     </nav>
 
     <main>
-        <section id="horario-escolar">
+        <details id="horario-escolar">
+            <summary>Ver horario escolar</summary>
             <h2>Horario escolar del ciclo formativo</h2>
             <table border="1" cellpadding="8" cellspacing="0">
                 <caption>Horario semanal de lunes a viernes</caption>
@@ -106,7 +97,7 @@
                 </tfoot>
             </table>
             <p><a href="#inicio">Volver al inicio</a></p>
-        </section>
+        </details>
     </main>
 </body>
 </html>
