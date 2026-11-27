@@ -78,3 +78,213 @@ thead th {
 .break-cell { background-color: rgb(226, 216, 232); }
 .football-emblem { display: block; width: 88px; margin: 14px auto 0; }
 .site-footer { margin-top: 24px; padding: 12px; background-color: rgb(0, 116, 205); }
+
+/* Formularios inspirados en las maquetas de la actividad */
+.form-page {
+    min-height: 100vh;
+    padding: 24px 12px 40px;
+    background: #eef1f4;
+}
+.form-header {
+    max-width: 760px;
+    margin: 0 auto 18px;
+    padding: 20px 24px;
+    border-radius: 4px;
+    background: white;
+    color: #25384a;
+    text-align: center;
+    box-shadow: 0 4px 14px rgb(40 55 70 / 8%);
+}
+.form-header h1 {
+    margin: 0;
+    color: #7b1f22;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(20px, 3vw, 28px);
+}
+.form-header p {
+    margin: 8px 0 0;
+    color: #7b1f22;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.form-card {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 18px;
+    overflow: visible;
+    border: 0;
+    background: white;
+}
+.form-card form {
+    margin: 0;
+}
+.form-card fieldset {
+    margin: 0 0 12px;
+    padding: 12px 14px 14px;
+    border: 1px solid rgb(166 176 184);
+    border-radius: 3px;
+}
+.form-card legend {
+    padding: 2px 7px;
+    color: white;
+    background: #596a78;
+    font-size: 13px;
+    font-weight: bold;
+}
+.form-card p {
+    margin: 8px 0;
+}
+.form-card label {
+    color: #31404d;
+    font-size: 14px;
+}
+.form-card input[type="text"],
+.form-card input[type="email"],
+.form-card input[type="tel"],
+.form-card input[type="number"],
+.form-card input[type="date"],
+.form-card input[type="time"],
+.form-card select,
+.form-card textarea {
+    min-height: 30px;
+    margin: 3px 4px 3px 0;
+    padding: 5px 7px;
+    border: 1px solid #aeb8bf;
+    border-radius: 3px;
+    background: white;
+    color: #263442;
+}
+.form-card textarea {
+    width: 100%;
+    max-width: 100%;
+    min-height: 84px;
+    resize: vertical;
+}
+.form-card input[type="radio"],
+.form-card input[type="checkbox"] {
+    accent-color: #667783;
+}
+.form-card button {
+    min-width: 110px;
+    margin: 4px 6px 4px 0;
+    padding: 8px 14px;
+    border: 1px solid #687987;
+    border-radius: 3px;
+    background: #eef2f4;
+    color: #31404d;
+    cursor: pointer;
+    font-weight: bold;
+}
+.form-card button[type="submit"] {
+    border-color: #8a9aa5;
+    background: #dfe7eb;
+}
+.form-card button:hover {
+    background: #ccd8df;
+}
+.form-card > form > p:last-of-type {
+    text-align: center;
+}
+.form-page footer {
+    max-width: 760px;
+    margin: 12px auto 0;
+    text-align: center;
+}
+.form-page footer a {
+    color: #3d5a70;
+    font-weight: bold;
+}
+
+.inscription-page .form-card {
+    max-width: 720px;
+}
+.inscription-page fieldset:nth-of-type(1) {
+    border-color: #9aa5b3;
+    background: #dfe4ea;
+}
+.inscription-page fieldset:nth-of-type(2) {
+    border: 0;
+    background: #f1c79f;
+}
+.inscription-page fieldset:nth-of-type(3) {
+    border: 0;
+    background: #c9a1a8;
+}
+.inscription-page fieldset:nth-of-type(1) legend {
+    background: #718091;
+}
+.inscription-page fieldset:nth-of-type(2) legend {
+    background: #df9b63;
+}
+.inscription-page fieldset:nth-of-type(3) legend {
+    background: #b87a83;
+}
+.inscription-page fieldset ul {
+    margin: 4px 0;
+    padding-left: 28px;
+}
+.inscription-page fieldset li {
+    margin: 4px 0;
+}
+
+.club-page .form-header {
+    max-width: 700px;
+    border-radius: 18px;
+    background: #fff7e8;
+}
+.club-page .form-header h1 {
+    color: #7b5a21;
+    font-size: 20px;
+    font-style: italic;
+}
+.club-page .form-card {
+    max-width: 700px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+.club-page .form-card fieldset {
+    border: 0;
+}
+.club-page .form-card fieldset:nth-of-type(1) {
+    border-radius: 16px;
+    background: #e5b66c;
+}
+.club-page .form-card fieldset:nth-of-type(2) {
+    border-radius: 16px;
+    background: #f3c98a;
+}
+.club-page .form-card legend {
+    background: transparent;
+    color: #8a4b22;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 13px;
+    font-style: italic;
+}
+.club-page fieldset fieldset {
+    margin: 8px 0;
+    padding: 8px 10px;
+    background: rgb(255 255 255 / 28%);
+}
+.club-page fieldset fieldset legend {
+    color: #31404d;
+    background: transparent;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+}
+.club-page .form-card label {
+    font-weight: 600;
+}
+.club-page .form-card button {
+    border: 1px solid #c17c29;
+    background: #fff2d6;
+    color: #6d4822;
+}
+@media (min-width: 700px) {
+    .inscription-page .form-card fieldset:nth-of-type(1) p {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: center;
+        column-gap: 12px;
+    }
+}
