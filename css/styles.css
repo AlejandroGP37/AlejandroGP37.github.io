@@ -280,6 +280,80 @@ thead th {
     background: #fff2d6;
     color: #6d4822;
 }
+
+.restaurant-page {
+    background: #f3eee7;
+}
+.restaurant-page .form-header {
+    max-width: 680px;
+    border-top: 5px solid #9d5b35;
+    border-radius: 8px;
+}
+.restaurant-page .form-header h1 {
+    color: #7c3f24;
+}
+.restaurant-page .form-header p {
+    color: #9d6a4c;
+    text-transform: none;
+}
+.restaurant-page .form-card {
+    max-width: 680px;
+    border: 1px solid #dfd2c4;
+    border-radius: 8px;
+    background: #fffdf9;
+}
+.restaurant-page .form-card fieldset {
+    border: 1px solid #d6c2ad;
+    background: #fffaf3;
+}
+.restaurant-page .form-card legend {
+    background: #9d5b35;
+}
+.restaurant-page .form-card input,
+.restaurant-page .form-card select,
+.restaurant-page .form-card textarea {
+    border-color: #bda48d;
+}
+.restaurant-page .form-card button[type="submit"] {
+    border-color: #9d5b35;
+    background: #9d5b35;
+    color: white;
+}
+.restaurant-page .form-card button {
+    border-radius: 6px;
+}
+.restaurant-page nav,
+.restaurant-page footer {
+    max-width: 680px;
+    margin: 12px auto;
+    padding: 8px;
+    text-align: center;
+}
+.restaurant-page nav {
+    background: #fff8f1;
+}
+.restaurant-page nav a,
+.restaurant-page footer a {
+    color: #7c3f24;
+    font-weight: bold;
+}
+.restaurant-page main ul {
+    list-style: none;
+    padding: 0;
+}
+.restaurant-page main li {
+    margin: 10px 0;
+}
+.restaurant-page main li a {
+    display: block;
+    padding: 14px;
+    border: 1px solid #d6c2ad;
+    border-radius: 6px;
+    background: #fffaf3;
+    color: #7c3f24;
+    text-decoration: none;
+    font-weight: bold;
+}
 @media (min-width: 700px) {
     .inscription-page .form-card fieldset:nth-of-type(1) p {
         display: grid;

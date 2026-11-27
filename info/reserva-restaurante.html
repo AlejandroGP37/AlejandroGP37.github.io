@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Reserva | Restaurante El Planton</title>
 </head>
-<body>
-    <header>
+<body class="form-page restaurant-page">
+    <header class="form-header">
         <h1>Solicita una reserva</h1>
     </header>
 
@@ -15,7 +16,7 @@
         <a href="formularios-restaurante.html">Volver a formularios</a>
     </nav>
 
-    <main>
+    <main class="form-card">
         <form>
             <fieldset>
                 <legend>Datos de la reserva</legend>
@@ -58,5 +59,13 @@
     <footer>
         <a href="iniciorestaurante.html">Volver al restaurante</a>
     </footer>
+    <script>
+        const reservationForm = document.querySelector("form");
+        reservationForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            alert("Gracias. Tu solicitud de reserva se ha registrado.");
+            reservationForm.reset();
+        });
+    </script>
 </body>
 </html>

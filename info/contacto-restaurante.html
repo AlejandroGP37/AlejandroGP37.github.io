@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Contacto | Restaurante El Planton</title>
 </head>
-<body>
-    <header>
+<body class="form-page restaurant-page">
+    <header class="form-header">
         <h1>Envíanos un mensaje</h1>
     </header>
 
@@ -15,7 +16,7 @@
         <a href="formularios-restaurante.html">Volver a formularios</a>
     </nav>
 
-    <main>
+    <main class="form-card">
         <form>
             <fieldset>
                 <legend>Datos de contacto</legend>
@@ -50,5 +51,13 @@
     <footer>
         <a href="iniciorestaurante.html">Volver al restaurante</a>
     </footer>
+    <script>
+        const contactForm = document.querySelector("form");
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            alert("Gracias. Tu mensaje se ha enviado correctamente.");
+            contactForm.reset();
+        });
+    </script>
 </body>
 </html>
