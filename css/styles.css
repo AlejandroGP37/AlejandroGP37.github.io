@@ -309,6 +309,72 @@ thead th {
     color: white;
 }
 
+.forms-menu-page {
+    background: #f3eee7;
+}
+.forms-menu-page .form-header {
+    max-width: 980px;
+    border-top: 5px solid #9d5b35;
+    border-radius: 8px;
+}
+.forms-menu {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    overflow: visible;
+    border: 0;
+    background: transparent;
+}
+.forms-menu-page nav,
+.forms-menu-page footer {
+    max-width: 980px;
+    margin: 12px auto;
+    text-align: center;
+}
+.forms-menu-page .form-group {
+    min-height: 260px;
+    padding: 22px;
+    border: 1px solid #d6c2ad;
+    border-radius: 8px;
+    background: #fffdf9;
+}
+.forms-menu-page .form-group h2 {
+    margin: 0 0 12px;
+    color: #7c3f24;
+    text-align: center;
+}
+.forms-menu-page .form-group ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.forms-menu-page .form-group li {
+    margin: 10px 0;
+}
+.forms-menu-page .form-group a {
+    display: block;
+    padding: 14px;
+    border: 1px solid #d6c2ad;
+    border-radius: 6px;
+    background: #fffaf3;
+    color: #7c3f24;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+.forms-menu-page .form-group a:hover {
+    background: #9d5b35;
+    color: white;
+}
+@media (max-width: 700px) {
+    .forms-menu {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Anula el contenedor general para una presentación fiel a las maquetas */
 .form-page {
     /* Ocupa toda la altura disponible */
