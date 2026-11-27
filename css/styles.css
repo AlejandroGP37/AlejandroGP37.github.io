@@ -281,6 +281,279 @@ thead th {
     color: #6d4822;
 }
 
+.activity-links {
+    margin-top: 20px;
+    padding-top: 14px;
+    border-top: 1px solid oklch(88% 0.018 250);
+}
+.activity-links ul {
+    list-style: none;
+    margin: 12px 0 0;
+    padding: 0;
+}
+.activity-links li {
+    margin: 8px 0;
+}
+.activity-links a {
+    display: inline-block;
+    min-width: 280px;
+    padding: 10px 14px;
+    border: 1px solid rgb(0, 116, 205);
+    border-radius: 5px;
+    color: rgb(0, 79, 139);
+    text-decoration: none;
+    font-weight: bold;
+}
+.activity-links a:hover {
+    background: rgb(0, 116, 205);
+    color: white;
+}
+
+/* Anula el contenedor general para una presentación fiel a las maquetas */
+.form-page {
+    /* Ocupa toda la altura disponible */
+    min-height: 100vh;
+    /* Separa el formulario de los bordes */
+    padding: 24px 12px 40px;
+    /* Usa el fondo claro de las hojas */
+    background: #f2f3f4;
+}
+.inscription-page .form-header {
+    /* Define el ancho de la hoja */
+    max-width: 760px;
+    /* Centra el encabezado */
+    margin: 0 auto 18px;
+    /* Espacia el contenido interior */
+    padding: 20px 24px;
+    /* Redondea ligeramente el panel */
+    border-radius: 4px;
+    /* Aplica fondo blanco */
+    background: white;
+}
+.inscription-page .form-header h1 {
+    /* Elimina márgenes por defecto */
+    margin: 0;
+    /* Aplica el rojo de la maqueta */
+    color: #7b2528;
+    /* Usa una fuente serifada similar */
+    font-family: Georgia, "Times New Roman", serif;
+    /* Ajusta el tamaño del título */
+    font-size: 34px;
+}
+.inscription-page .form-header p {
+    /* Separa el subtítulo del título */
+    margin: 10px 0 0;
+    /* Aplica el rojo oscuro */
+    color: #7b2528;
+    /* Destaca el texto */
+    font-weight: bold;
+    /* Convierte el texto a mayúsculas */
+    text-transform: uppercase;
+}
+.inscription-page .form-card {
+    /* Limita el ancho del formulario */
+    max-width: 760px;
+    /* Centra el contenido */
+    margin: 0 auto;
+    /* Espacia los bloques */
+    padding: 16px 14px;
+    /* Elimina bordes exteriores */
+    border: 0;
+    /* Usa fondo blanco */
+    background: white;
+}
+.inscription-page fieldset {
+    /* Elimina redondeos excesivos */
+    border-radius: 2px;
+}
+.inscription-page .personal-data {
+    /* Usa el gris azulado de datos personales */
+    background: #dde2e8;
+    /* Define el borde gris */
+    border: 1px solid #99a2ab;
+}
+.inscription-page .personal-data legend {
+    /* Aplica el gris oscuro del legend */
+    background: #65717e;
+}
+.inscription-page .personal-row {
+    /* Distribuye tres campos en columnas */
+    display: grid;
+    /* Reparte el ancho entre las tres columnas */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    /* Separa las columnas */
+    gap: 12px;
+    /* Reduce el espacio entre filas */
+    margin: 5px 0;
+}
+.inscription-page .personal-row.postal-row {
+    /* Reparte la última fila en dos áreas */
+    grid-template-columns: 2fr 1fr;
+}
+.inscription-page .personal-row p {
+    /* Distribuye etiqueta y campo en línea */
+    display: grid;
+    /* Mantiene etiqueta y campo alineados */
+    grid-template-columns: auto 1fr;
+    /* Centra verticalmente ambos elementos */
+    align-items: center;
+    /* Une etiqueta y campo */
+    gap: 6px;
+    /* Elimina márgenes superiores */
+    margin: 4px 0;
+}
+.inscription-page .personal-data label {
+    /* Usa negrita como en la maqueta */
+    font-weight: bold;
+    /* Mantiene un tamaño legible */
+    font-size: 13px;
+}
+.inscription-page .access-data {
+    /* Quita el borde visible */
+    border: 0;
+    /* Aplica el melocotón de la maqueta */
+    background: #efc69f;
+}
+.inscription-page .access-data legend {
+    /* Aplica el naranja del legend */
+    background: #d9a274;
+}
+.inscription-page .documents-data {
+    /* Quita el borde visible */
+    border: 0;
+    /* Aplica el rosa grisáceo */
+    background: #c4a0a5;
+}
+.inscription-page .documents-data legend {
+    /* Aplica el rojo rosado del legend */
+    background: #ad7b82;
+}
+.inscription-page .form-card ul {
+    /* Elimina viñetas predeterminadas */
+    list-style: none;
+    /* Reduce el margen izquierdo */
+    padding-left: 18px;
+}
+.inscription-page .form-card li {
+    /* Separa ligeramente las opciones */
+    margin: 4px 0;
+}
+.inscription-page .form-actions {
+    /* Centra los botones inferiores */
+    text-align: center;
+}
+.inscription-page footer,
+.club-page footer {
+    /* Centra el pie */
+    max-width: 760px;
+    /* Separa el pie del formulario */
+    margin: 10px auto 0;
+    /* Centra los enlaces */
+    text-align: center;
+}
+.inscription-page footer a,
+.club-page footer a {
+    /* Separa los enlaces */
+    margin: 0 8px;
+    /* Oscurece el enlace */
+    color: #40566b;
+}
+
+.club-page {
+    /* Usa fondo blanco grisáceo */
+    background: #f5f5f5;
+}
+.club-page .form-header {
+    /* Limita el ancho al grupo central */
+    max-width: 700px;
+    /* Usa el fondo crema de la maqueta */
+    background: #fff8eb;
+    /* Redondea el encabezado */
+    border-radius: 18px;
+}
+.club-page .form-header h1 {
+    /* Aplica el color marrón */
+    color: #73551f;
+    /* Usa fuente serifada */
+    font-family: Georgia, "Times New Roman", serif;
+    /* Ajusta el tamaño del título */
+    font-size: 26px;
+    /* Inclina el título */
+    font-style: italic;
+}
+.club-page .form-card {
+    /* Limita el ancho del cuestionario */
+    max-width: 700px;
+    /* Elimina el fondo blanco exterior */
+    padding: 0;
+    /* Elimina el borde exterior */
+    border: 0;
+    /* Hace transparente el contenedor */
+    background: transparent;
+}
+.club-page .personal-data {
+    /* Aplica el dorado del bloque principal */
+    background: #e0b56f;
+    /* Elimina el borde exterior */
+    border: 0;
+    /* Redondea el bloque */
+    border-radius: 16px;
+}
+.club-page .personal-data legend,
+.club-page .interest-data legend {
+    /* Deja transparente el legend dorado */
+    background: transparent;
+    /* Aplica el marrón oscuro */
+    color: #764c21;
+    /* Usa fuente serifada */
+    font-family: Georgia, "Times New Roman", serif;
+    /* Inclina el legend */
+    font-style: italic;
+}
+.club-page .personal-data p {
+    /* Distribuye etiquetas y campos */
+    display: grid;
+    /* Reserva el ancho de las etiquetas */
+    grid-template-columns: 150px 1fr;
+    /* Centra los elementos */
+    align-items: center;
+    /* Reduce el margen vertical */
+    margin: 7px 0;
+}
+.club-page .personal-data label,
+.club-page .interest-data label {
+    /* Destaca las etiquetas */
+    font-weight: bold;
+}
+.club-page .civil-status,
+.club-page .sex-data,
+.club-page .activities-data {
+    /* Quita el borde visual interior */
+    border: 0;
+    /* Hace visible la separación */
+    background: rgb(255 255 255 / 22%);
+}
+.club-page .interest-data {
+    /* Aplica el amarillo del segundo bloque */
+    background: #efc789;
+    /* Elimina el borde exterior */
+    border: 0;
+    /* Redondea el bloque */
+    border-radius: 16px;
+}
+.club-page .devices-row {
+    /* Coloca el selector junto a su etiqueta */
+    display: grid;
+    /* Reserva espacio para texto y selector */
+    grid-template-columns: 1fr 150px;
+    /* Separa ambas áreas */
+    gap: 12px;
+}
+.club-page .devices-row select {
+    /* Mantiene visible el cuadro múltiple */
+    height: 92px;
+}
+
 .restaurant-page {
     background: #f3eee7;
 }
